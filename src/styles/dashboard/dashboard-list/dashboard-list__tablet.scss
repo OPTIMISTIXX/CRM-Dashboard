@@ -1,0 +1,11 @@
+@media (max-width: 991px) {
+  .dashboard__item {
+    height: fit-content;
+  }
+
+  .dashboard__list {
+    .dashboard__link {
+      margin-bottom: 0px;
+    }
+  }
+}

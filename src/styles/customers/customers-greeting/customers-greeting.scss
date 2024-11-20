@@ -1,0 +1,7 @@
+.customers__greeting {
+  &-title {
+    @include medium-text;
+    font-size: 24px;
+    margin-left: 42px;
+  }
+}

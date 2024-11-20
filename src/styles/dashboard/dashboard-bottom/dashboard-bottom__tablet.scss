@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+  .dashboard__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .dashboard__author {
+    &-title {
+      @include medium-text;
+      text-align: center;
+    }
+    &-subtitle {
+      @include regular-text;
+      color: #757575;
+      text-align: center;
+    }
+  }
+}

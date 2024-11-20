@@ -1,0 +1,49 @@
+.customers__card-table {
+  box-sizing: border-box;
+  margin-top: 36px;
+  @include semi-bold-text-14;
+  width: 100%;
+
+  .customers__card-table-cell--head {
+    color: #b5b7c0;
+    padding: 14px 0;
+  }
+
+  .customers__card-table-row {
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .customers__card-table-cell--body {
+    color: #292d32;
+    // margin: 20px 0;
+  }
+
+  .customers__card-table-cell {
+    text-align: left;
+  }
+
+  .customers__card-table-cell--status {
+    text-align: center;
+  }
+
+  .customers__card-table-cell--active {
+    padding: 4px 0;
+    display: block;
+    text-align: center;
+    border: 1px solid #00b087;
+    border-radius: 4px;
+    background-color: rgba(22, 192, 152, 0.38);
+    color: #008767;
+  }
+
+  .customers__card-table-cell--inactive {
+    padding: 4px 0;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #df0404;
+    background-color: #ffc5c5;
+    color: #df0404;
+  }
+}

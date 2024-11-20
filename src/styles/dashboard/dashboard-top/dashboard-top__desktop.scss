@@ -1,0 +1,26 @@
+@media (max-width: 1249px) {
+  .dashboard__container {
+    max-width: 90%;
+    margin: 0 auto;
+
+    .dashboard__top {
+      display: flex;
+
+      .dashboard__title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 8px;
+
+        .dashboard__version {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .dashboard__burger {
+    display: none;
+  }
+}

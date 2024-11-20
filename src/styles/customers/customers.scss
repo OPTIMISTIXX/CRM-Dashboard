@@ -1,0 +1,27 @@
+//Greating
+@import "./customers-greeting/customers-greeting.scss";
+//Card-header
+@import "./customers-card/customers-card-header/customers-card-header.scss";
+@import "./customers-card/customers-card-header/customers-card-header__tablet.scss";
+//Card-table
+@import "./customers-card/customers-card-table/customers-card-table.scss";
+@import "./customers-card/customers-card-table/customers-card-table__desktop.scss";
+//Card-pagination
+@import "./customers-card/customers-pagination/customers-pagination.scss";
+
+.customers {
+  flex-grow: 1;
+  padding: 36px 137px 0 29px;
+}
+
+@media (max-width: 1200px) {
+  .customers {
+    padding: 36px 36px 0 29px;
+  }
+}
+
+@media (max-width: 992px) {
+  .customers {
+    padding: 36px 15px 0 15px;
+  }
+}

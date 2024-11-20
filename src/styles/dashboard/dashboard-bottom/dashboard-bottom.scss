@@ -1,0 +1,14 @@
+.dashboard__bottom {
+  display: flex;
+  gap: 12px;
+}
+
+.dashboard__author {
+  &-title {
+    @include medium-text;
+  }
+  &-subtitle {
+    @include regular-text;
+    color: #757575;
+  }
+}

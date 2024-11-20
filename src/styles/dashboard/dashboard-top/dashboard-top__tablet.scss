@@ -1,0 +1,21 @@
+@media (max-width: 991px) {
+  .dashboard__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .dashboard__top {
+    height: fit-content;
+    position: absolute;
+  }
+
+  .dashboard__logo {
+    width: 37px;
+    height: 37px;
+  }
+
+  .dashboard__list {
+    display: flex;
+  }
+}

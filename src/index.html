@@ -1,13 +1,464 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Dashboard Customers</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <h1>Landing Page</h1>
+    <div class="wrapper">
+      <aside class="dashboard">
+        <div class="dashboard__container">
+          <section class="dashboard__top">
+            <img
+              src="./assets/images/dashboard/settings-icon.svg"
+              alt="logo"
+              class="dashboard__logo"
+            />
+            <h2 class="dashboard__title">
+              Dashboard <span class="dashboard__version">v.01</span>
+            </h2>
+          </section>
+          <ul class="dashboard__list">
+            <li class="dashboard__item">
+              <a class="dashboard__link" href="#">
+                <img
+                  src="./assets/images/dashboard/key-square.svg"
+                  alt="key"
+                  class="dashboard__icon"
+                />
+                <p class="dashboard__item-text">Dashboard</p>
+              </a>
+            </li>
+            <li class="dashboard__item">
+              <a class="dashboard__link" href="#">
+                <img
+                  src="./assets/images/dashboard/3d-square 1.svg"
+                  alt="product"
+                  class="dashboard__icon"
+                />
+                <p class="dashboard__item-text">Product</p>
+                <div class="dashboard__chevron"></div>
+              </a>
+            </li>
+            <li class="dashboard__item dashboard__item--purple">
+              <a class="dashboard__link" href="#">
+                <img
+                  src="./assets/images/dashboard/user-square 1.svg"
+                  alt="user"
+                  class="dashboard__icon"
+                />
+                <p class="dashboard__item-text dashboard__item-text--white">
+                  Customers
+                </p>
+                <div class="dashboard__chevron dashboard__chevron--white"></div>
+              </a>
+            </li>
+            <li class="dashboard__item">
+              <a class="dashboard__link" href="#">
+                <img
+                  src="./assets/images/dashboard/wallet-money 2.svg"
+                  alt="wallet"
+                  class="dashboard__icon"
+                />
+                <p class="dashboard__item-text">Income</p>
+                <div class="dashboard__chevron"></div>
+              </a>
+            </li>
+            <li class="dashboard__item">
+              <a class="dashboard__link" href="#">
+                <img
+                  src="./assets/images/dashboard/discount-shape 1.svg"
+                  alt="discount-shape"
+                  class="dashboard__icon"
+                />
+                <p class="dashboard__item-text">Promote</p>
+                <div class="dashboard__chevron"></div>
+              </a>
+            </li>
+            <li class="dashboard__item">
+              <a class="dashboard__link" href="#">
+                <img
+                  src="./assets/images/dashboard/message-question 1.svg"
+                  alt="key"
+                  class="dashboard__icon"
+                />
+                <p class="dashboard__item-text">Help</p>
+                <div class="dashboard__chevron"></div>
+              </a>
+            </li>
+          </ul>
+          <section class="dashboard__bottom">
+            <img
+              src="./assets/images/dashboard/man.svg"
+              alt="man"
+              class="dashboard__author-image"
+            />
+            <div class="dashboard__author-content">
+              <p class="dashboard__author-title">Evano</p>
+              <p class="dashboard__author-subtitle">Project Manager</p>
+            </div>
+          </section>
+        </div>
+      </aside>
+      <main class="customers">
+        <div class="customers__container">
+          <section class="customers__greeting">
+            <h2 class="customers__greeting-title">Hello Evano 👋🏼 ,</h2>
+          </section>
+          <section class="customers__card">
+            <div class="customers__card-header">
+              <div class="customers__card-header-text">
+                <h2 class="customers__card-title">All Customers</h2>
+                <h3 class="customers__card-subtitle">Active Members</h3>
+              </div>
+              <div class="customers__card-search">
+                <img
+                  src="./assets/images/customers/search.svg"
+                  alt="search"
+                  class="customers__card-search-icon"
+                />
+                <input
+                  placeholder="Search"
+                  type="text"
+                  class="customers__card-input"
+                />
+              </div>
+            </div>
+            <table class="customers__card-table">
+              <thead class="customers__card-table-header">
+                <tr class="customers__card-table-row">
+                  <th
+                    class="customers__card-table-cell customers__card-table-cell--head"
+                  >
+                    Customer Name
+                  </th>
+                  <th
+                    class="customers__card-table-cell customers__card-table-cell--head"
+                  >
+                    Company
+                  </th>
+                  <th
+                    class="customers__card-table-cell customers__card-table-cell--head"
+                  >
+                    Phone Number
+                  </th>
+                  <th
+                    class="customers__card-table-cell customers__card-table-cell--head"
+                  >
+                    Email
+                  </th>
+                  <th
+                    class="customers__card-table-cell customers__card-table-cell--head"
+                  >
+                    Country
+                  </th>
+                  <th
+                    class="customers__card-table-cell customers__card-table-cell--status customers__card-table-cell--head"
+                  >
+                    Status
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="customers__card-table-body">
+                <tr class="customers__card-table-row">
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Jane Cooper
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Microsoft
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    (225) 555-0118
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    jane@microsoft.com
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    United States
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body customers__card-table-cell--active"
+                  >
+                    Active
+                  </td>
+                </tr>
+                <tr class="customers__card-table-row">
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Floyd Miles
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Yahoo
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    (205) 555-0100
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    floyd@yahoo.com
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Kiribati
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body customers__card-table-cell--inactive"
+                  >
+                    Inactive
+                  </td>
+                </tr>
+                <tr class="customers__card-table-row">
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Ronald Richards
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Adobe
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    (302) 555-0107
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    ronald@adobe.com
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Israel
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body customers__card-table-cell--inactive"
+                  >
+                    Inactive
+                  </td>
+                </tr>
+                <tr class="customers__card-table-row">
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Marvin McKinney
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Tesla
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    (252) 555-0126
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    marvin@tesla.com
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Iran
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body customers__card-table-cell--active"
+                  >
+                    Active
+                  </td>
+                </tr>
+                <tr class="customers__card-table-row">
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Jerome Bell
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Google
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    (629) 555-0129
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    jerome@google.com
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Réunion
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body customers__card-table-cell--active"
+                  >
+                    Active
+                  </td>
+                </tr>
+                <tr class="customers__card-table-row">
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Kathryn Murphy
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Microsoft
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    (406) 555-0120
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    kathryn@microsoft.com
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Curaçao
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body customers__card-table-cell--active"
+                  >
+                    Active
+                  </td>
+                </tr>
+                <tr class="customers__card-table-row">
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Jacob Jones
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Yahoo
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    (208) 555-0112
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    jacob@yahoo.com
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Brazil
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body customers__card-table-cell--active"
+                  >
+                    Active
+                  </td>
+                </tr>
+                <tr class="customers__card-table-row">
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Kristin Watson
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Facebook
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    (704) 555-0127
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    kristin@facebook.com
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body"
+                  >
+                    Åland Islands
+                  </td>
+                  <td
+                    class="customers__card-table-cell customers__card-table-cell--body customers__card-table-cell--inactive"
+                  >
+                    Inactive
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="customers__card-pagination">
+              <p class="customers__card-pagination-text">
+                Showing data 1 to 8 of 256K entries
+              </p>
+              <ul class="customers__card-pagination-controls">
+                <li class="customers__card-pagination-item">
+                  <a href="#" class="customers__card-pagination-link">&lt;</a>
+                </li>
+                <li
+                  class="customers__card-pagination-item customers__card-pagination-item--selected"
+                >
+                  <a href="#" class="customers__card-pagination-link">1</a>
+                </li>
+                <li class="customers__card-pagination-item">
+                  <a href="#" class="customers__card-pagination-link">2</a>
+                </li>
+                <li class="customers__card-pagination-item">
+                  <a href="#" class="customers__card-pagination-link">3</a>
+                </li>
+                <li class="customers__card-pagination-item">
+                  <a href="#" class="customers__card-pagination-link">4</a>
+                </li>
+                <li
+                  class="customers__card-pagination-item customers__card-pagination-item--no-bg"
+                >
+                  <a href="#" class="customers__card-pagination-link">...</a>
+                </li>
+                <li class="customers__card-pagination-item">
+                  <a href="#" class="customers__card-pagination-link">40</a>
+                </li>
+                <li class="customers__card-pagination-item">
+                  <a href="#" class="customers__card-pagination-link">&gt;</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

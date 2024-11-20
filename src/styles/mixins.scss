@@ -1,0 +1,25 @@
+@mixin medium-text {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@mixin semi-bold-text-14 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@mixin regular-text {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@mixin flex-vertical_center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

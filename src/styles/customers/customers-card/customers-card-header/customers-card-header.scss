@@ -1,0 +1,36 @@
+.customers {
+  &__card {
+    margin-top: 38px;
+    padding: 30px 38px;
+    border-radius: 30px;
+    background-color: #fff;
+
+    &-title {
+      font-weight: 600;
+      font-size: 22px;
+    }
+    &-subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      color: #16c098;
+    }
+    &-search-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+
+  &__card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__card-search {
+    background-color: #e7e7e7;
+    display: flex;
+    padding: 10px 8px;
+    border-radius: 10px;
+  }
+}

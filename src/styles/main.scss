@@ -1,3 +1,25 @@
-body {
-  margin: 0;
+//normalize and reset styles
+@import "./normalize.css";
+@import "./reset.css";
+
+//mixins
+@import "./mixins.scss";
+
+* {
+  font-family: "Poppins";
 }
+
+.wrapper {
+  background-color: #eeee;
+}
+@media (min-width: 992px) {
+  .wrapper {
+    display: flex;
+  }
+}
+
+//Dashboard
+@import "./dashboard/dashboard.scss";
+
+//Customers
+@import "./customers/customers.scss";

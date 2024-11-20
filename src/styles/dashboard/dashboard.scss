@@ -1,0 +1,42 @@
+@import "./dashboard-top/dashboard-top.scss";
+@import "./dashboard-top/dashboard-top__desktop.scss";
+@import "./dashboard-top/dashboard-top__tablet.scss";
+
+@import "./dashboard-list/dashboard-list.scss";
+@import "./dashboard-list/dashboard-list__tablet.scss";
+
+@import "./dashboard-bottom/dashboard-bottom.scss";
+@import "./dashboard-bottom/dashboard-bottom__tablet.scss";
+
+@media (min-width: 1250px) {
+  .dashboard {
+    width: 306px;
+  }
+}
+
+@media (max-width: 1249px) {
+  .dashboard {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1026px) {
+  .dashboard {
+    width: 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .dashboard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .dashboard__container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
