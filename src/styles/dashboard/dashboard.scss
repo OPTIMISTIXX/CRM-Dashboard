@@ -29,6 +29,7 @@
 @media (max-width: 991px) {
   .dashboard {
     width: 100%;
+    padding: 36px 0;
   }
 }
 
@@ -38,5 +39,40 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-from-bottom {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .dashboard-slide-in {
+    animation: slide-in 1.5s ease-out forwards;
+  }
+
+  .customer__card-slide-from-bottom {
+    animation: slide-from-bottom 1.5s ease-out forwards;
+  }
+
+  .dashboard-hidden,
+  .customers__card--hidden {
+    visibility: none;
   }
 }

@@ -9,12 +9,10 @@
   font-family: "Poppins";
 }
 
-.wrapper {
-  background-color: #eeee;
-}
 @media (min-width: 992px) {
   .wrapper {
     display: flex;
+    height: 100%;
   }
 }
 
@@ -23,3 +21,9 @@
 
 //Customers
 @import "./customers/customers.scss";
+
+@media (max-width: 735px) {
+  .wrapper {
+    width: 100vh;
+  }
+}

@@ -1,2 +1,17 @@
-@media (max-width: 993px) {
+@media (max-width: 568px) {
+  .customers__card {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .customers__card-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .customers__card-table-cell {
+    font-size: 20px;
+  }
 }

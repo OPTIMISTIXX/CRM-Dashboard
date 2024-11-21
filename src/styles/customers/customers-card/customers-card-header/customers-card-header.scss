@@ -28,9 +28,29 @@
   }
 
   &__card-search {
+    width: 215px;
+    box-sizing: border-box;
     background-color: #e7e7e7;
     display: flex;
     padding: 10px 8px;
     border-radius: 10px;
   }
+
+  &__card-input::placeholder {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    color: #b5b7c0;
+  }
+
+  &__card-input {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    color: #7e7e7e;
+  }
+}
+
+.card-search--border {
+  border: 1px solid #7e7e7e;
 }

@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <aside class="dashboard">
+      <aside id="dashboard-el" class="dashboard dashboard-hidden">
         <div class="dashboard__container">
           <section class="dashboard__top">
             <img
@@ -108,28 +108,33 @@
           <section class="customers__greeting">
             <h2 class="customers__greeting-title">Hello Evano 👋🏼 ,</h2>
           </section>
-          <section class="customers__card">
+          <section id="card-el" class="customers__card customers__card--hidden">
             <div class="customers__card-header">
               <div class="customers__card-header-text">
                 <h2 class="customers__card-title">All Customers</h2>
                 <h3 class="customers__card-subtitle">Active Members</h3>
               </div>
               <div class="customers__card-search">
-                <img
-                  src="./assets/images/customers/search.svg"
-                  alt="search"
-                  class="customers__card-search-icon"
-                />
+                <label class="search-label" for="search-field">
+                  <img
+                    src="./assets/images/customers/search.svg"
+                    alt="search"
+                    class="customers__card-search-icon"
+                  />
+                </label>
                 <input
                   placeholder="Search"
                   type="text"
                   class="customers__card-input"
+                  id="search-field"
                 />
               </div>
             </div>
             <table class="customers__card-table">
               <thead class="customers__card-table-header">
-                <tr class="customers__card-table-row">
+                <tr
+                  class="customers__card-table-row customers__card--first-row"
+                >
                   <th
                     class="customers__card-table-cell customers__card-table-cell--head"
                   >

@@ -18,4 +18,12 @@
   .dashboard__list {
     display: flex;
   }
+
+  .dashboard__chevron {
+    display: none;
+  }
+
+  .dashboard__item {
+    flex-grow: 1;
+  }
 }

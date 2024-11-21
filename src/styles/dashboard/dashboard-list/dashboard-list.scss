@@ -8,6 +8,7 @@
       margin-left: 14px;
     }
   }
+
   .dashboard__link {
     display: flex;
     padding: 11px;
@@ -37,6 +38,19 @@
 
   .dashboard__link:hover .dashboard__chevron {
     background-image: url("../assets/images/dashboard/chevron-right--white.svg");
+  }
+
+  @media (max-width: 568px) {
+    .dashboard__icon {
+      display: none;
+    }
+    .dashboard__link {
+      justify-content: center;
+    }
+    .dashboard__item-text {
+      font-size: 20px;
+      margin-left: 0;
+    }
   }
 
   .dashboard__item--purple {

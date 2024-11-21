@@ -1,7 +1,14 @@
 @media (max-width: 991px) {
+  .dashboard__container {
+    position: relative;
+  }
+
   .dashboard__bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    bottom: 60%;
     gap: 12px;
   }
 
@@ -15,5 +22,27 @@
       color: #757575;
       text-align: center;
     }
+  }
+}
+
+@media (max-width: 568px) {
+  .dashboard__author {
+    &-title {
+      display: none;
+    }
+    &-subtitle {
+      display: none;
+    }
+
+    &-image {
+      width: 55px;
+      height: 55px;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .dashboard__bottom {
+    bottom: 60%;
   }
 }
